@@ -1,38 +1,40 @@
-package intermediate.lecture_03;
+package intermediate.lecture_03_CodeCoverage;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import intermediate.lecture_03_CodeCoverage.StringUtils;
+
 public class StringUtilsTest {
 	
 	@Test
 	public void testChopOff2SpacesAtHead_OnlyTwo() {
-		assertEquals("**", intermediate.lecture_03.StringUtils.chopOff2SpacesAtHead("**"));
+		assertEquals("**", intermediate.lecture_03_CodeCoverage.StringUtils.chopOff2SpacesAtHead("**"));
 //		assertEquals("**", su.chopOff2SpacesAtHead("**"));
 	}
 
 	@Test
 	public void testChopOff2SpacesAtHead_BothAtLeft() {
-		assertEquals("**", intermediate.lecture_03.StringUtils.chopOff2SpacesAtHead("  **"));
+		assertEquals("**", intermediate.lecture_03_CodeCoverage.StringUtils.chopOff2SpacesAtHead("  **"));
 //		assertEquals("**", su.chopOff2SpacesAtHead("  **"));
 	}
 	
 	@Test
 	public void testChopOff2SpacesAtHead_Single() {
-		assertEquals("**", intermediate.lecture_03.StringUtils.chopOff2SpacesAtHead(" **"));
+		assertEquals("**", intermediate.lecture_03_CodeCoverage.StringUtils.chopOff2SpacesAtHead(" **"));
 //		assertEquals("**", su.chopOff2SpacesAtHead(" **"));
 	}
 	
 	@Test
 	public void testChopOff2SpacesAtHead_None() {
-		assertEquals("****", intermediate.lecture_03.StringUtils.chopOff2SpacesAtHead("****"));
+		assertEquals("****", intermediate.lecture_03_CodeCoverage.StringUtils.chopOff2SpacesAtHead("****"));
 //		assertEquals("****", su.chopOff2SpacesAtHead("****"));
 	}
 	
 	@Test
 	public void testChopOff2SpacesAtHead_BothAtRight() {
-		assertEquals("**  ", intermediate.lecture_03.StringUtils.chopOff2SpacesAtHead("**  "));
+		assertEquals("**  ", intermediate.lecture_03_CodeCoverage.StringUtils.chopOff2SpacesAtHead("**  "));
 //		assertEquals("**  ", su.chopOff2SpacesAtHead("**  "));
 	}
 	

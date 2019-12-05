@@ -1,4 +1,4 @@
-package intermediate.lecture_01;
+package intermediate.lecture_01_atCategory;
 
 import static org.junit.Assert.*;
 

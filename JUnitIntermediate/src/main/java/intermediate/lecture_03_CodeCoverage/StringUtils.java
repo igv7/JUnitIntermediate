@@ -1,4 +1,4 @@
-package intermediate.lecture_03;
+package intermediate.lecture_03_CodeCoverage;
 
 public class StringUtils {
 
