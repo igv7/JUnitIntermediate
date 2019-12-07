@@ -26,6 +26,12 @@ class PersonValidatorTest {
 		public void testValidateLastName(Person person) {
 			assertTrue(PersonValidator.validateLastName(person));
 		}
+		
+		@RepeatedTest(10)
+		@DisplayName("All id are valid")
+		public void testValidateId(Person person) {
+			assertTrue(PersonValidator.validateId(person));
+		}
 	}
 	
 	@Nested
@@ -42,6 +48,12 @@ class PersonValidatorTest {
 		@DisplayName("All last names are invalid")
 		public void testValidateLastName(Person person) {
 			assertTrue(PersonValidator.validateLastName(person));
+		}
+		
+		@RepeatedTest(10)
+		@DisplayName("All id are invalid")
+		public void testValidateId(Person person) {
+			assertTrue(PersonValidator.validateId(person));
 		}
 	}
 

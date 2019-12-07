@@ -31,17 +31,12 @@ public class PersonValidator {
 	}
 	
 	
-//	public static boolean validateId(Person person) {
-//		long id = person.getId();
-//		if (id == 0) {
-//			return false;
-//		}
-//		for (long i = 0; i <= person.getId(); i++) {
-//			if (Long.valueOf(i) == 0) {
-//				return false;
-//			}
-//		}
-//		return true;
-//	}
+	public static boolean validateId(Person person) {
+		long id = person.getId();
+		if (id == 0) {
+			return false;
+		}
+		return true;
+	}
 
 }

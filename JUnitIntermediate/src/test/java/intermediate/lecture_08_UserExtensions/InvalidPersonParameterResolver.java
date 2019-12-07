@@ -13,12 +13,12 @@ import org.junit.jupiter.api.extension.ParameterResolver;
 class InvalidPersonParameterResolver implements ParameterResolver {
 
 	public static final Person[] VALID_PERSONS = {
-			new Person().setId(1L).setFirstName("Moshe,").setLastName("Mo_she"),
-			new Person().setId(2L).setFirstName("").setLastName(",Kobi"),
-			new Person().setId(3L).setFirstName(null).setLastName(null),
-			new Person().setId(4L).setFirstName("{Matan}").setLastName("Matan&"),
-			new Person().setId(5L).setFirstName("Zamir Zamir").setLastName(""),
-			new Person().setId(6L)/*.setFirstName("Tom").setLastName("Tom")*/,
+			new Person().setId(0).setFirstName("Moshe,").setLastName("Mo_she"),
+			new Person().setId(0L).setFirstName("").setLastName(",Kobi"),
+			new Person().setId(00).setFirstName(null).setLastName(null),
+			new Person().setId(000).setFirstName("{Matan}").setLastName("Matan&"),
+			new Person().setId(000L).setFirstName("Zamir Zamir").setLastName(""),
+			new Person()/*.setId(6L)/*.setFirstName("Tom").setLastName("Tom")*/,
 		};
 
 	@Override
