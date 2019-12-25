@@ -62,5 +62,10 @@ public class StringUtilsTest {
 	public void testAre2CharsAtHeadAndTailEqual_OneSymbol() {
 		assertFalse(su.are2CharsAtHeadAndTailEqual("1"));
 	}
+	
+	@Test
+	public void testAre2CharsAtHeadAndTailEqual_NonSymbol() {
+		assertFalse(su.are2CharsAtHeadAndTailEqual(" "));
+	}
 
 }
